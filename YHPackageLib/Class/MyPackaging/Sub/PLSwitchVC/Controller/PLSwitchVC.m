@@ -30,7 +30,7 @@
     CGFloat svcH = self.view.frame.size.height - svcY;
     self.switchVCView.frame = CGRectMake(svcX, svcY, svcW, svcH);
     self.switchVCView.headBarButtonWidth = 50;
-    self.switchVCView.headBarButtonSelectedBackgroundColor = [UIColor redColor];
+//    self.switchVCView.headBarButtonSelectedBackgroundColor = [UIColor redColor];
     
     // 测试添加控制器
     UIViewController *vc1 = [[UIViewController alloc] init];
