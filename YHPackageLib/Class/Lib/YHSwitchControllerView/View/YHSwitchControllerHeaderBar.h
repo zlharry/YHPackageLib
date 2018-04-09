@@ -38,7 +38,6 @@
 /** 工具条按钮选中背景颜色 */
 @property (nonatomic, strong) UIColor *headBarButtonSelectedBackgroundColor;
 
-
 /** 标记View的X所在的比例 */
 @property (nonatomic, assign) CGFloat tagViewXScale;
 

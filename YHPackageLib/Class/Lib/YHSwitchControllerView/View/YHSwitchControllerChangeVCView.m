@@ -110,9 +110,9 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"%f", scrollView.contentOffset.x);
     if ([self.delegate respondsToSelector:@selector(switchControllerView:didScrollAtScale:)]) {
         [self.delegate switchControllerView:self didScrollAtScale:scrollView.contentOffset.x / scrollView.contentSize.width];
     }
 }
+
 @end

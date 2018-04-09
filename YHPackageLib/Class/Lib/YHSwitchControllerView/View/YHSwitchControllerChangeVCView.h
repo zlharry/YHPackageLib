@@ -14,6 +14,7 @@
 @optional
 //
 - (void)switchControllerView:(YHSwitchControllerChangeVCView *)switchControllerView didScrollAtScale:(CGFloat)scale;
+
 @end
 
 @interface YHSwitchControllerChangeVCView : UIView

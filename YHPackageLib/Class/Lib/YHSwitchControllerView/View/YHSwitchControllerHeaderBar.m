@@ -22,6 +22,9 @@
 
 /** 当前选中的按钮 */
 @property (nonatomic, weak) YHSwitchControllerHeaderButton *currentSelectedButton;
+
+
+
 @end
 
 @implementation YHSwitchControllerHeaderBar
@@ -99,6 +102,10 @@
     tagFrame.origin.x = tagViewXScale * self.scrollView.contentSize.width;
     self.tagView.frame = tagFrame;
     
+    
+    // 自动切换选中的按钮
+    [self autoSelected];
+    
     // 自动滑动到合适的位置
     CGFloat tagViewCenterX = tagFrame.origin.x + tagFrame.size.width * 0.5;
     if (tagViewCenterX <= self.frame.size.width * 0.5) {
@@ -107,6 +114,20 @@
         self.scrollView.contentOffset = CGPointMake(self.scrollView.contentSize.width - self.frame.size.width, 0);
     } else {
         self.scrollView.contentOffset = CGPointMake(tagViewCenterX - self.frame.size.width * 0.5, 0);
+    }
+    
+    
+}
+
+/** 自动将对应的按钮设为选中 */
+- (void)autoSelected
+{
+    NSInteger selectedIndex = (NSInteger)(self.tagView.frame.origin.x/self.tagView.frame.size.width + 0.5);
+    YHSwitchControllerHeaderButton *btn = self.buttons[selectedIndex];
+    if (btn != self.currentSelectedButton) {
+        self.currentSelectedButton.selected = NO;
+        btn.selected = YES;
+        self.currentSelectedButton = btn;
     }
 }
 
@@ -157,6 +178,14 @@
         btnX = index * btnW;
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
         btn.tag = index;
+        
+        // 默认选择第一个按钮
+        if (self.currentSelectedButton == nil) {
+            if (index == 0) {
+                btn.selected = YES;
+                self.currentSelectedButton = btn;
+            }
+        }
     }
     
     self.scrollView.contentSize = CGSizeMake(btnW * self.buttons.count, 0);
@@ -185,9 +214,11 @@
         [self.delegate switchControllerHeaderBar:self didselectedButtonFrom:self.currentSelectedButton.tag to:btn.tag];
     }
     
-    self.currentSelectedButton.selected = NO;
-    btn.selected = YES;
-    self.currentSelectedButton = btn;
+//    self.currentSelectedButton.selected = NO;
+//    btn.selected = YES;
+//    self.currentSelectedButton = btn;
+    
+    
 }
 
 

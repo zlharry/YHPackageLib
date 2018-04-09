@@ -235,4 +235,5 @@
     self.headerBar.tagViewXScale = scale;
 }
 
+
 @end
