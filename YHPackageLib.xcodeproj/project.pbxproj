@@ -61,9 +61,11 @@
 		AEF47240207490EA004D771F /* tabBar_3HL.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47228207490EA004D771F /* tabBar_3HL.png */; };
 		AEF47241207490EA004D771F /* tabBar_3HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47229207490EA004D771F /* tabBar_3HL@2x.png */; };
 		AEF47242207490EA004D771F /* tabBar_3HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF4722A207490EA004D771F /* tabBar_3HL@3x.png */; };
+		B1CCA02FC4A7C40B77217AB7 /* libPods-YHPackageLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CCAA7E721221C21E42E75D7 /* Pods-YHPackageLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHPackageLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib.debug.xcconfig"; sourceTree = "<group>"; };
 		4A4E5A592078647B00E50947 /* LibBaseTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibBaseTableViewVC.m; sourceTree = "<group>"; };
 		4A4E5A5A2078647B00E50947 /* LibBaseTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibBaseTableViewVC.h; sourceTree = "<group>"; };
 		4A4E5A6A20786A7B00E50947 /* LibAppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibAppCell.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		4AAEF3D220772D9800287CB5 /* PLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNavigationController.m; sourceTree = "<group>"; };
 		4AAEF3D52077476A00287CB5 /* YHNavigationControllerConfigurationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHNavigationControllerConfigurationModel.h; sourceTree = "<group>"; };
 		4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHNavigationControllerConfigurationModel.m; sourceTree = "<group>"; };
+		6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHPackageLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF47213207490EA004D771F /* tabBar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_0.png; sourceTree = "<group>"; };
 		AEF47214207490EA004D771F /* tabBar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@2x.png"; sourceTree = "<group>"; };
 		AEF47215207490EA004D771F /* tabBar_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@3x.png"; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		AEF47228207490EA004D771F /* tabBar_3HL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_3HL.png; sourceTree = "<group>"; };
 		AEF47229207490EA004D771F /* tabBar_3HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_3HL@2x.png"; sourceTree = "<group>"; };
 		AEF4722A207490EA004D771F /* tabBar_3HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_3HL@3x.png"; sourceTree = "<group>"; };
+		C549C2CAEEF2F6341D561E62 /* Pods-YHPackageLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHPackageLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,12 +157,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CCA02FC4A7C40B77217AB7 /* libPods-YHPackageLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DD7467DDA6FB016B264A0A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CCAA7E721221C21E42E75D7 /* Pods-YHPackageLib.debug.xcconfig */,
+				C549C2CAEEF2F6341D561E62 /* Pods-YHPackageLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4A4E5A572078647B00E50947 /* LibBaseTableViewVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +267,8 @@
 			children = (
 				4A6D36672073B7CB00FC95D1 /* YHPackageLib */,
 				4A6D36662073B7CB00FC95D1 /* Products */,
+				0DD7467DDA6FB016B264A0A9 /* Pods */,
+				F33C0B6CB12A756435D8773F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -631,6 +647,14 @@
 			path = tabBarIcons;
 			sourceTree = "<group>";
 		};
+		F33C0B6CB12A756435D8773F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -638,9 +662,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A6D367B2073B7CB00FC95D1 /* Build configuration list for PBXNativeTarget "YHPackageLib" */;
 			buildPhases = (
+				9ADCF6C6ABEA60F370EB0026 /* [CP] Check Pods Manifest.lock */,
 				4A6D36612073B7CB00FC95D1 /* Sources */,
 				4A6D36622073B7CB00FC95D1 /* Frameworks */,
 				4A6D36632073B7CB00FC95D1 /* Resources */,
+				A4C75A5CCBB2B4E38B7BBFCD /* [CP] Embed Pods Frameworks */,
+				69840444486C4D1E2FF10AB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -720,6 +747,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69840444486C4D1E2FF10AB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ADCF6C6ABEA60F370EB0026 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YHPackageLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C75A5CCBB2B4E38B7BBFCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A6D36612073B7CB00FC95D1 /* Sources */ = {
@@ -884,6 +962,7 @@
 		};
 		4A6D367C2073B7CB00FC95D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCAA7E721221C21E42E75D7 /* Pods-YHPackageLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -898,6 +977,7 @@
 		};
 		4A6D367D2073B7CB00FC95D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C549C2CAEEF2F6341D561E62 /* Pods-YHPackageLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
