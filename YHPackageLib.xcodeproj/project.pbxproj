@@ -37,6 +37,7 @@
 		4AAEF3CF20772D6100287CB5 /* YHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3CE20772D6100287CB5 /* YHNavigationController.m */; };
 		4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D220772D9800287CB5 /* PLNavigationController.m */; };
 		4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */; };
+		4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC24365207D118700AD0AE4 /* YHAFTool.m */; };
 		AEF4722B207490EA004D771F /* tabBar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47213207490EA004D771F /* tabBar_0.png */; };
 		AEF4722C207490EA004D771F /* tabBar_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47214207490EA004D771F /* tabBar_0@2x.png */; };
 		AEF4722D207490EA004D771F /* tabBar_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47215207490EA004D771F /* tabBar_0@3x.png */; };
@@ -124,6 +125,8 @@
 		4AAEF3D220772D9800287CB5 /* PLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNavigationController.m; sourceTree = "<group>"; };
 		4AAEF3D52077476A00287CB5 /* YHNavigationControllerConfigurationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHNavigationControllerConfigurationModel.h; sourceTree = "<group>"; };
 		4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHNavigationControllerConfigurationModel.m; sourceTree = "<group>"; };
+		4AC24364207D118700AD0AE4 /* YHAFTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFTool.h; sourceTree = "<group>"; };
+		4AC24365207D118700AD0AE4 /* YHAFTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFTool.m; sourceTree = "<group>"; };
 		6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHPackageLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF47213207490EA004D771F /* tabBar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_0.png; sourceTree = "<group>"; };
 		AEF47214207490EA004D771F /* tabBar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@2x.png"; sourceTree = "<group>"; };
@@ -525,6 +528,7 @@
 		4AAEF3B62077201600287CB5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4AC24363207D0DF300AD0AE4 /* YHAFTool */,
 				4A4E5A7C2078943A00E50947 /* YHSwitchControllerView */,
 				4AAEF3CB20772D3E00287CB5 /* YHNavigationController */,
 				4AAEF3B72077201600287CB5 /* YHTabBarController */,
@@ -614,6 +618,15 @@
 				4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4AC24363207D0DF300AD0AE4 /* YHAFTool */ = {
+			isa = PBXGroup;
+			children = (
+				4AC24364207D118700AD0AE4 /* YHAFTool.h */,
+				4AC24365207D118700AD0AE4 /* YHAFTool.m */,
+			);
+			path = YHAFTool;
 			sourceTree = "<group>";
 		};
 		AEF47212207490EA004D771F /* tabBarIcons */ = {
@@ -811,6 +824,7 @@
 				4A6D36882073B80C00FC95D1 /* main.m in Sources */,
 				4AAEF3C82077201600287CB5 /* YHTabBar.m in Sources */,
 				4AAEF3C62077201600287CB5 /* YHChildVCModel.m in Sources */,
+				4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */,
 				4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */,
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
 				4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */,

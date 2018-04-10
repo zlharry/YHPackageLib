@@ -8,6 +8,8 @@
 
 #import "PLHomeVC.h"
 
+#import "YHAFTool.h"
+
 @interface PLHomeVC ()
 
 @end
@@ -29,6 +31,19 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.title = @"首页";
+    
+    // 发送测试请求
+    
+    [YHAFTool GETData:@"http://cdn.cocimg.com/bbs/attachment/upload/03/1643031429686718.jpg"
+       parameters:nil
+          success:^(NSData *responseObject) {
+              NSLog(@"%@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+              [responseObject writeToFile:@"/Users/harry/Desktop/test.jpg" atomically:YES];
+        ;
+          }
+          failure:^(NSError *error) {
+              NSLog(@"%@", error);
+          }];
     
 }
 
