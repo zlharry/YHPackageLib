@@ -38,7 +38,7 @@
        parameters:nil
           success:^(NSData *responseObject) {
               NSLog(@"%@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
-              [responseObject writeToFile:@"/Users/harry/Desktop/test.jpg" atomically:YES];
+              [responseObject writeToFile:@"/Users/sunshine/Desktop/test.jpg" atomically:YES];
         ;
           }
           failure:^(NSError *error) {
