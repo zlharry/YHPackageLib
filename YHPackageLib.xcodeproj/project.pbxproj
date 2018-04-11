@@ -29,6 +29,8 @@
 		4AA23D752077AFE800023757 /* PLSDKIntergrationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA23D742077AFE800023757 /* PLSDKIntergrationVC.m */; };
 		4AA23D782077B00900023757 /* PLThirdPartyLibsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA23D772077B00900023757 /* PLThirdPartyLibsVC.m */; };
 		4AA23D7B2077B01600023757 /* PLMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA23D7A2077B01600023757 /* PLMeVC.m */; };
+		4AA6FAAB207E689700DE420A /* YHTCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6FAAA207E689700DE420A /* YHTCPSocket.m */; };
+		4AA6FAAF207E6EF100DE420A /* YHMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6FAAE207E6EF100DE420A /* YHMutableWeakArray.m */; };
 		4AAEF3C52077201600287CB5 /* YHTabBarControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3BA2077201600287CB5 /* YHTabBarControler.m */; };
 		4AAEF3C62077201600287CB5 /* YHChildVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3BC2077201600287CB5 /* YHChildVCModel.m */; };
 		4AAEF3C72077201600287CB5 /* YHTabBarConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3BF2077201600287CB5 /* YHTabBarConfigurationModel.m */; };
@@ -109,6 +111,10 @@
 		4AA23D772077B00900023757 /* PLThirdPartyLibsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLThirdPartyLibsVC.m; sourceTree = "<group>"; };
 		4AA23D792077B01600023757 /* PLMeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMeVC.h; sourceTree = "<group>"; };
 		4AA23D7A2077B01600023757 /* PLMeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMeVC.m; sourceTree = "<group>"; };
+		4AA6FAA9207E689700DE420A /* YHTCPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTCPSocket.h; sourceTree = "<group>"; };
+		4AA6FAAA207E689700DE420A /* YHTCPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTCPSocket.m; sourceTree = "<group>"; };
+		4AA6FAAD207E6EF100DE420A /* YHMutableWeakArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMutableWeakArray.h; sourceTree = "<group>"; };
+		4AA6FAAE207E6EF100DE420A /* YHMutableWeakArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMutableWeakArray.m; sourceTree = "<group>"; };
 		4AAEF3B92077201600287CB5 /* YHTabBarControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTabBarControler.h; sourceTree = "<group>"; };
 		4AAEF3BA2077201600287CB5 /* YHTabBarControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTabBarControler.m; sourceTree = "<group>"; };
 		4AAEF3BC2077201600287CB5 /* YHChildVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHChildVCModel.m; sourceTree = "<group>"; };
@@ -525,9 +531,45 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4AA6FAA6207E686900DE420A /* YHSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				4AA6FAA8207E688100DE420A /* TCP */,
+				4AA6FAA7207E688100DE420A /* UDP */,
+			);
+			path = YHSocketManager;
+			sourceTree = "<group>";
+		};
+		4AA6FAA7207E688100DE420A /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UDP;
+			sourceTree = "<group>";
+		};
+		4AA6FAA8207E688100DE420A /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				4AA6FAA9207E689700DE420A /* YHTCPSocket.h */,
+				4AA6FAAA207E689700DE420A /* YHTCPSocket.m */,
+			);
+			path = TCP;
+			sourceTree = "<group>";
+		};
+		4AA6FAAC207E6EAC00DE420A /* YHMutableWeakArray */ = {
+			isa = PBXGroup;
+			children = (
+				4AA6FAAD207E6EF100DE420A /* YHMutableWeakArray.h */,
+				4AA6FAAE207E6EF100DE420A /* YHMutableWeakArray.m */,
+			);
+			path = YHMutableWeakArray;
+			sourceTree = "<group>";
+		};
 		4AAEF3B62077201600287CB5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4AA6FAAC207E6EAC00DE420A /* YHMutableWeakArray */,
+				4AA6FAA6207E686900DE420A /* YHSocketManager */,
 				4AC24363207D0DF300AD0AE4 /* YHAFTool */,
 				4A4E5A7C2078943A00E50947 /* YHSwitchControllerView */,
 				4AAEF3CB20772D3E00287CB5 /* YHNavigationController */,
@@ -827,6 +869,7 @@
 				4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */,
 				4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */,
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
+				4AA6FAAB207E689700DE420A /* YHTCPSocket.m in Sources */,
 				4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */,
 				4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */,
 				4AA23D722077AFCB00023757 /* PLMyPackagingVC.m in Sources */,
@@ -837,6 +880,7 @@
 				4AAEF3C52077201600287CB5 /* YHTabBarControler.m in Sources */,
 				4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */,
 				4AA23D7B2077B01600023757 /* PLMeVC.m in Sources */,
+				4AA6FAAF207E6EF100DE420A /* YHMutableWeakArray.m in Sources */,
 				4A4E5A6F20786A8800E50947 /* LibAppGroupModel.m in Sources */,
 				4A6D36A72073D11C00FC95D1 /* PLHomeVC.m in Sources */,
 				4A4E5A852078996500E50947 /* YHSwitchControllerHeaderBar.m in Sources */,
