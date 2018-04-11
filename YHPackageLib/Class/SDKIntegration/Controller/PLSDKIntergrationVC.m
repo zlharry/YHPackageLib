@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.title = @"SDK集成";
 }
 
 @end
