@@ -40,6 +40,8 @@
 		4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D220772D9800287CB5 /* PLNavigationController.m */; };
 		4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */; };
 		4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC24365207D118700AD0AE4 /* YHAFTool.m */; };
+		AEDF0747207EFDDA00984842 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */; };
+		AEDF0748207EFDDA00984842 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */; };
 		AEF4722B207490EA004D771F /* tabBar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47213207490EA004D771F /* tabBar_0.png */; };
 		AEF4722C207490EA004D771F /* tabBar_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47214207490EA004D771F /* tabBar_0@2x.png */; };
 		AEF4722D207490EA004D771F /* tabBar_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47215207490EA004D771F /* tabBar_0@3x.png */; };
@@ -134,6 +136,11 @@
 		4AC24364207D118700AD0AE4 /* YHAFTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFTool.h; sourceTree = "<group>"; };
 		4AC24365207D118700AD0AE4 /* YHAFTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFTool.m; sourceTree = "<group>"; };
 		6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHPackageLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDF0742207EFDDA00984842 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		AEDF0743207EFDDA00984842 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		AEDF0745207EFDDA00984842 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		AEF47213207490EA004D771F /* tabBar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_0.png; sourceTree = "<group>"; };
 		AEF47214207490EA004D771F /* tabBar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@2x.png"; sourceTree = "<group>"; };
 		AEF47215207490EA004D771F /* tabBar_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@3x.png"; sourceTree = "<group>"; };
@@ -622,6 +629,7 @@
 		4AAEF3CA2077201F00287CB5 /* OtherLib */ = {
 			isa = PBXGroup;
 			children = (
+				AEDF0740207EFDDA00984842 /* CocoaAsyncSocket */,
 			);
 			path = OtherLib;
 			sourceTree = "<group>";
@@ -669,6 +677,26 @@
 				4AC24365207D118700AD0AE4 /* YHAFTool.m */,
 			);
 			path = YHAFTool;
+			sourceTree = "<group>";
+		};
+		AEDF0740207EFDDA00984842 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				AEDF0741207EFDDA00984842 /* GCD */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		AEDF0741207EFDDA00984842 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				AEDF0742207EFDDA00984842 /* CocoaAsyncSocket.h */,
+				AEDF0743207EFDDA00984842 /* GCDAsyncSocket.h */,
+				AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */,
+				AEDF0745207EFDDA00984842 /* GCDAsyncUdpSocket.h */,
+				AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		AEF47212207490EA004D771F /* tabBarIcons */ = {
@@ -870,6 +898,8 @@
 				4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */,
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
 				4AA6FAAB207E689700DE420A /* YHTCPSocket.m in Sources */,
+				AEDF0747207EFDDA00984842 /* GCDAsyncSocket.m in Sources */,
+				AEDF0748207EFDDA00984842 /* GCDAsyncUdpSocket.m in Sources */,
 				4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */,
 				4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */,
 				4AA23D722077AFCB00023757 /* PLMyPackagingVC.m in Sources */,
