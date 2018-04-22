@@ -44,7 +44,7 @@
     
     [YHDropDownListView showInView:self.view
                         actionView:btn
-                          listSize:CGSizeMake(200, 200)
+                          listSize:CGSizeMake(btn.frame.size.width, 200)
                             models:models
                 didClickedRowBlock:^(NSInteger row, YHDropDownListModel *model) {
                     NSLog(@"%ld -- %@", row, model.title);
