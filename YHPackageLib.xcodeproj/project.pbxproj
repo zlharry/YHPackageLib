@@ -40,8 +40,6 @@
 		4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D220772D9800287CB5 /* PLNavigationController.m */; };
 		4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */; };
 		4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC24365207D118700AD0AE4 /* YHAFTool.m */; };
-		AEDF0747207EFDDA00984842 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */; };
-		AEDF0748207EFDDA00984842 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */; };
 		AEF4722B207490EA004D771F /* tabBar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47213207490EA004D771F /* tabBar_0.png */; };
 		AEF4722C207490EA004D771F /* tabBar_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47214207490EA004D771F /* tabBar_0@2x.png */; };
 		AEF4722D207490EA004D771F /* tabBar_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47215207490EA004D771F /* tabBar_0@3x.png */; };
@@ -66,7 +64,7 @@
 		AEF47240207490EA004D771F /* tabBar_3HL.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47228207490EA004D771F /* tabBar_3HL.png */; };
 		AEF47241207490EA004D771F /* tabBar_3HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47229207490EA004D771F /* tabBar_3HL@2x.png */; };
 		AEF47242207490EA004D771F /* tabBar_3HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF4722A207490EA004D771F /* tabBar_3HL@3x.png */; };
-		B1CCA02FC4A7C40B77217AB7 /* libPods-YHPackageLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */; };
+		F3DEC31E839E40DC5074EAB9 /* Pods_YHPackageLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1B5EF4869A9821E105B7DF /* Pods_YHPackageLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,12 +133,6 @@
 		4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHNavigationControllerConfigurationModel.m; sourceTree = "<group>"; };
 		4AC24364207D118700AD0AE4 /* YHAFTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFTool.h; sourceTree = "<group>"; };
 		4AC24365207D118700AD0AE4 /* YHAFTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFTool.m; sourceTree = "<group>"; };
-		6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHPackageLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEDF0742207EFDDA00984842 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
-		AEDF0743207EFDDA00984842 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		AEDF0745207EFDDA00984842 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		AEF47213207490EA004D771F /* tabBar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_0.png; sourceTree = "<group>"; };
 		AEF47214207490EA004D771F /* tabBar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@2x.png"; sourceTree = "<group>"; };
 		AEF47215207490EA004D771F /* tabBar_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@3x.png"; sourceTree = "<group>"; };
@@ -166,6 +158,7 @@
 		AEF47229207490EA004D771F /* tabBar_3HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_3HL@2x.png"; sourceTree = "<group>"; };
 		AEF4722A207490EA004D771F /* tabBar_3HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_3HL@3x.png"; sourceTree = "<group>"; };
 		C549C2CAEEF2F6341D561E62 /* Pods-YHPackageLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHPackageLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib.release.xcconfig"; sourceTree = "<group>"; };
+		FA1B5EF4869A9821E105B7DF /* Pods_YHPackageLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHPackageLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1CCA02FC4A7C40B77217AB7 /* libPods-YHPackageLib.a in Frameworks */,
+				F3DEC31E839E40DC5074EAB9 /* Pods_YHPackageLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +622,6 @@
 		4AAEF3CA2077201F00287CB5 /* OtherLib */ = {
 			isa = PBXGroup;
 			children = (
-				AEDF0740207EFDDA00984842 /* CocoaAsyncSocket */,
 			);
 			path = OtherLib;
 			sourceTree = "<group>";
@@ -679,26 +671,6 @@
 			path = YHAFTool;
 			sourceTree = "<group>";
 		};
-		AEDF0740207EFDDA00984842 /* CocoaAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				AEDF0741207EFDDA00984842 /* GCD */,
-			);
-			path = CocoaAsyncSocket;
-			sourceTree = "<group>";
-		};
-		AEDF0741207EFDDA00984842 /* GCD */ = {
-			isa = PBXGroup;
-			children = (
-				AEDF0742207EFDDA00984842 /* CocoaAsyncSocket.h */,
-				AEDF0743207EFDDA00984842 /* GCDAsyncSocket.h */,
-				AEDF0744207EFDDA00984842 /* GCDAsyncSocket.m */,
-				AEDF0745207EFDDA00984842 /* GCDAsyncUdpSocket.h */,
-				AEDF0746207EFDDA00984842 /* GCDAsyncUdpSocket.m */,
-			);
-			path = GCD;
-			sourceTree = "<group>";
-		};
 		AEF47212207490EA004D771F /* tabBarIcons */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,7 +705,7 @@
 		F33C0B6CB12A756435D8773F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E2BB14ED87D859E84305BE5 /* libPods-YHPackageLib.a */,
+				FA1B5EF4869A9821E105B7DF /* Pods_YHPackageLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -750,7 +722,6 @@
 				4A6D36622073B7CB00FC95D1 /* Frameworks */,
 				4A6D36632073B7CB00FC95D1 /* Resources */,
 				A4C75A5CCBB2B4E38B7BBFCD /* [CP] Embed Pods Frameworks */,
-				69840444486C4D1E2FF10AB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -832,21 +803,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		69840444486C4D1E2FF10AB3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9ADCF6C6ABEA60F370EB0026 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,9 +827,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -898,8 +859,6 @@
 				4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */,
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
 				4AA6FAAB207E689700DE420A /* YHTCPSocket.m in Sources */,
-				AEDF0747207EFDDA00984842 /* GCDAsyncSocket.m in Sources */,
-				AEDF0748207EFDDA00984842 /* GCDAsyncUdpSocket.m in Sources */,
 				4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */,
 				4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */,
 				4AA23D722077AFCB00023757 /* PLMyPackagingVC.m in Sources */,
