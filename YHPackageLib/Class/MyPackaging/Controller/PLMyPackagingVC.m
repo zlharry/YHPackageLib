@@ -10,6 +10,7 @@
 
 
 #import "PLSwitchVC.h"
+#import "DropDownListVC.h"
 
 
 @interface PLMyPackagingVC ()
@@ -37,6 +38,9 @@
     [group0 addModel:[LibAppModel modelWithTitle:@"YHSwitchController"
                                         subTitle:@"在顶部有一个工具条，可以在多个控制器之间切换"
                                         tarClass:[PLSwitchVC class]]];
+    [group0 addModel:[LibAppModel modelWithTitle:@"DropDownListVC"
+                                        subTitle:@"一个下拉列表的封装"
+                                        tarClass:[DropDownListVC class]]];
    
     
 //    // 第二组
