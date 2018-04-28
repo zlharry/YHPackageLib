@@ -17,5 +17,7 @@
     }
     return self;
 }
+
 + (instancetype)modelWithTitle:(NSString *)title {return [[self alloc] initWithTitle:title];}
+
 @end

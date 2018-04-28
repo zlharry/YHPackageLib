@@ -17,7 +17,6 @@
 		4A4E5A882078999000E50947 /* YHSwitchControllerChangeVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A872078999000E50947 /* YHSwitchControllerChangeVCView.m */; };
 		4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A8A2078A49A00E50947 /* YHSwitchControllerView.m */; };
 		4A4E5A8E2078A99300E50947 /* YHSwitchControllerHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A8D2078A99300E50947 /* YHSwitchControllerHeaderButton.m */; };
-		4A5C30CA2082554A00447881 /* YHTCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C30C92082554A00447881 /* YHTCPSocket.m */; };
 		4A5C30D0208255C200447881 /* YHTCPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C30CF208255C200447881 /* YHTCPSocketServer.m */; };
 		4A60696B208C4DE9004282DF /* YHDropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60696A208C4DE9004282DF /* YHDropDownListView.m */; };
 		4A60696E208C4EA5004282DF /* YHDropDownListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60696D208C4EA5004282DF /* YHDropDownListModel.m */; };
@@ -44,6 +43,7 @@
 		4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D220772D9800287CB5 /* PLNavigationController.m */; };
 		4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */; };
 		4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC24365207D118700AD0AE4 /* YHAFTool.m */; };
+		AE106446208D673000561D93 /* YHTCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE106444208D673000561D93 /* YHTCPSocket.m */; };
 		AEF4722B207490EA004D771F /* tabBar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47213207490EA004D771F /* tabBar_0.png */; };
 		AEF4722C207490EA004D771F /* tabBar_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47214207490EA004D771F /* tabBar_0@2x.png */; };
 		AEF4722D207490EA004D771F /* tabBar_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47215207490EA004D771F /* tabBar_0@3x.png */; };
@@ -93,8 +93,6 @@
 		4A4E5A8A2078A49A00E50947 /* YHSwitchControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHSwitchControllerView.m; sourceTree = "<group>"; };
 		4A4E5A8C2078A99300E50947 /* YHSwitchControllerHeaderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHSwitchControllerHeaderButton.h; sourceTree = "<group>"; };
 		4A4E5A8D2078A99300E50947 /* YHSwitchControllerHeaderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHSwitchControllerHeaderButton.m; sourceTree = "<group>"; };
-		4A5C30C82082554A00447881 /* YHTCPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTCPSocket.h; sourceTree = "<group>"; };
-		4A5C30C92082554A00447881 /* YHTCPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTCPSocket.m; sourceTree = "<group>"; };
 		4A5C30CE208255C200447881 /* YHTCPSocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHTCPSocketServer.h; sourceTree = "<group>"; };
 		4A5C30CF208255C200447881 /* YHTCPSocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTCPSocketServer.m; sourceTree = "<group>"; };
 		4A606969208C4DE9004282DF /* YHDropDownListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDropDownListView.h; sourceTree = "<group>"; };
@@ -145,6 +143,8 @@
 		4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHNavigationControllerConfigurationModel.m; sourceTree = "<group>"; };
 		4AC24364207D118700AD0AE4 /* YHAFTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFTool.h; sourceTree = "<group>"; };
 		4AC24365207D118700AD0AE4 /* YHAFTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFTool.m; sourceTree = "<group>"; };
+		AE106444208D673000561D93 /* YHTCPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YHTCPSocket.m; path = YHPackageLib/Class/Lib/YHSocketManager/TCP/YHTCPSocket.m; sourceTree = SOURCE_ROOT; };
+		AE106445208D673000561D93 /* YHTCPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YHTCPSocket.h; path = YHPackageLib/Class/Lib/YHSocketManager/TCP/YHTCPSocket.h; sourceTree = SOURCE_ROOT; };
 		AEF47213207490EA004D771F /* tabBar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_0.png; sourceTree = "<group>"; };
 		AEF47214207490EA004D771F /* tabBar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@2x.png"; sourceTree = "<group>"; };
 		AEF47215207490EA004D771F /* tabBar_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_0@3x.png"; sourceTree = "<group>"; };
@@ -296,8 +296,8 @@
 		4A5C30C72082554A00447881 /* YHTCPClient */ = {
 			isa = PBXGroup;
 			children = (
-				4A5C30C82082554A00447881 /* YHTCPSocket.h */,
-				4A5C30C92082554A00447881 /* YHTCPSocket.m */,
+				AE106445208D673000561D93 /* YHTCPSocket.h */,
+				AE106444208D673000561D93 /* YHTCPSocket.m */,
 			);
 			path = YHTCPClient;
 			sourceTree = "<group>";
@@ -917,6 +917,7 @@
 				4A6D36882073B80C00FC95D1 /* main.m in Sources */,
 				4AAEF3C82077201600287CB5 /* YHTabBar.m in Sources */,
 				4AAEF3C62077201600287CB5 /* YHChildVCModel.m in Sources */,
+				AE106446208D673000561D93 /* YHTCPSocket.m in Sources */,
 				4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */,
 				4A4E5A8B2078A49A00E50947 /* YHSwitchControllerView.m in Sources */,
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
@@ -937,7 +938,6 @@
 				4A6D36A72073D11C00FC95D1 /* PLHomeVC.m in Sources */,
 				4A4E5A852078996500E50947 /* YHSwitchControllerHeaderBar.m in Sources */,
 				4AAEF3CF20772D6100287CB5 /* YHNavigationController.m in Sources */,
-				4A5C30CA2082554A00447881 /* YHTCPSocket.m in Sources */,
 				4A4E5A8E2078A99300E50947 /* YHSwitchControllerHeaderButton.m in Sources */,
 				4A6D36872073B80C00FC95D1 /* ViewController.m in Sources */,
 				4A4E5A882078999000E50947 /* YHSwitchControllerChangeVCView.m in Sources */,
@@ -1079,6 +1079,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MLHZBKLKSB;
 				INFOPLIST_FILE = YHPackageLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.YHPackageLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1094,6 +1095,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MLHZBKLKSB;
 				INFOPLIST_FILE = YHPackageLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.YHPackageLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
