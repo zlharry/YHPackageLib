@@ -84,14 +84,15 @@
             tarVC = vc;
         }
         
-        [tarVC addObserver:self.tabBarButtons[index]
-                forKeyPath:@"tabBarItem.badgeValue"
-                   options:1 | 2
-                   context:nil];
-        [tarVC addObserver:self.tabBarButtons[index]
-                forKeyPath:@"tabBarItem.title"
-                   options:1 | 2
-                   context:nil];
+        // 以后改用通知
+//        [tarVC addObserver:self.tabBarButtons[index]
+//                forKeyPath:@"tabBarItem.badgeValue"
+//                   options:1 | 2
+//                   context:nil];
+//        [tarVC addObserver:self.tabBarButtons[index]
+//                forKeyPath:@"tabBarItem.title"
+//                   options:1 | 2
+//                   context:nil];
     }
 }
 

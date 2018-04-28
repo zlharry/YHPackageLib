@@ -206,6 +206,8 @@
     self.scrollView.frame = self.bounds;
     [self layoutButtons];
     
+    // 为了防止导航控制器自动将 scroll view 向下滑动。
+    self.scrollView.contentOffset = CGPointMake(0, 0);
 }
 
 - (void)btnClicked:(YHSwitchControllerHeaderButton *)btn
@@ -240,8 +242,8 @@
     [btn setTitleColor:self.headBarButtonSelectedTitleColor forState:UIControlStateSelected];
     btn.selectedBackgroundColor = self.headBarButtonSelectedBackgroundColor;
     
-
-    [viewController addObserver:btn forKeyPath:@"title" options:1 | 2 context:nil];
+// 先不监听，以后改用通知实现
+//    [viewController addObserver:btn forKeyPath:@"title" options:1 | 2 context:nil];
     
     [self layoutButtons];
 }
