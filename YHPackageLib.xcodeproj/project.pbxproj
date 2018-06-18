@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A3E2F97209DF0F600A01DD7 /* PLHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E2F96209DF0F600A01DD7 /* PLHUDVC.m */; };
+		4A3E2F9B209DF3C300A01DD7 /* YHHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E2F9A209DF3C300A01DD7 /* YHHUD.m */; };
 		4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A592078647B00E50947 /* LibBaseTableViewVC.m */; };
 		4A4E5A6C20786A7B00E50947 /* LibAppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A6A20786A7B00E50947 /* LibAppCell.m */; };
 		4A4E5A6F20786A8800E50947 /* LibAppGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E5A6D20786A8800E50947 /* LibAppGroupModel.m */; };
@@ -42,6 +44,8 @@
 		4AAEF3CF20772D6100287CB5 /* YHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3CE20772D6100287CB5 /* YHNavigationController.m */; };
 		4AAEF3D320772D9800287CB5 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D220772D9800287CB5 /* PLNavigationController.m */; };
 		4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */; };
+		4AB8076920D652BF00C4809B /* YHScanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB8076820D652BF00C4809B /* YHScanCodeView.m */; };
+		4AB8076E20D6542E00C4809B /* QRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB8076D20D6542E00C4809B /* QRCodeVC.m */; };
 		4AC24366207D118700AD0AE4 /* YHAFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC24365207D118700AD0AE4 /* YHAFTool.m */; };
 		AE106446208D673000561D93 /* YHTCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE106444208D673000561D93 /* YHTCPSocket.m */; };
 		AEF4722B207490EA004D771F /* tabBar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF47213207490EA004D771F /* tabBar_0.png */; };
@@ -73,6 +77,10 @@
 
 /* Begin PBXFileReference section */
 		1CCAA7E721221C21E42E75D7 /* Pods-YHPackageLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHPackageLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHPackageLib/Pods-YHPackageLib.debug.xcconfig"; sourceTree = "<group>"; };
+		4A3E2F95209DF0F600A01DD7 /* PLHUDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHUDVC.h; sourceTree = "<group>"; };
+		4A3E2F96209DF0F600A01DD7 /* PLHUDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHUDVC.m; sourceTree = "<group>"; };
+		4A3E2F99209DF3C300A01DD7 /* YHHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHHUD.h; sourceTree = "<group>"; };
+		4A3E2F9A209DF3C300A01DD7 /* YHHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHHUD.m; sourceTree = "<group>"; };
 		4A4E5A592078647B00E50947 /* LibBaseTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibBaseTableViewVC.m; sourceTree = "<group>"; };
 		4A4E5A5A2078647B00E50947 /* LibBaseTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibBaseTableViewVC.h; sourceTree = "<group>"; };
 		4A4E5A6A20786A7B00E50947 /* LibAppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibAppCell.m; sourceTree = "<group>"; };
@@ -141,6 +149,10 @@
 		4AAEF3D220772D9800287CB5 /* PLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNavigationController.m; sourceTree = "<group>"; };
 		4AAEF3D52077476A00287CB5 /* YHNavigationControllerConfigurationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHNavigationControllerConfigurationModel.h; sourceTree = "<group>"; };
 		4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHNavigationControllerConfigurationModel.m; sourceTree = "<group>"; };
+		4AB8076720D652BF00C4809B /* YHScanCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHScanCodeView.h; sourceTree = "<group>"; };
+		4AB8076820D652BF00C4809B /* YHScanCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHScanCodeView.m; sourceTree = "<group>"; };
+		4AB8076C20D6542E00C4809B /* QRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeVC.h; sourceTree = "<group>"; };
+		4AB8076D20D6542E00C4809B /* QRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeVC.m; sourceTree = "<group>"; };
 		4AC24364207D118700AD0AE4 /* YHAFTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFTool.h; sourceTree = "<group>"; };
 		4AC24365207D118700AD0AE4 /* YHAFTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFTool.m; sourceTree = "<group>"; };
 		AE106444208D673000561D93 /* YHTCPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YHTCPSocket.m; path = YHPackageLib/Class/Lib/YHSocketManager/TCP/YHTCPSocket.m; sourceTree = SOURCE_ROOT; };
@@ -194,6 +206,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A3E2F92209DF09700A01DD7 /* SUB */ = {
+			isa = PBXGroup;
+			children = (
+				4A3E2F93209DF09700A01DD7 /* HUD */,
+			);
+			path = SUB;
+			sourceTree = "<group>";
+		};
+		4A3E2F93209DF09700A01DD7 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				4A3E2F94209DF09700A01DD7 /* Controller */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		4A3E2F94209DF09700A01DD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A3E2F95209DF0F600A01DD7 /* PLHUDVC.h */,
+				4A3E2F96209DF0F600A01DD7 /* PLHUDVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A3E2F98209DF39300A01DD7 /* YHHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4A3E2F99209DF3C300A01DD7 /* YHHUD.h */,
+				4A3E2F9A209DF3C300A01DD7 /* YHHUD.m */,
+			);
+			path = YHHUD;
+			sourceTree = "<group>";
+		};
 		4A4E5A572078647B00E50947 /* LibBaseTableViewVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +284,7 @@
 		4A4E5A762078921000E50947 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				4AB8076A20D6530900C4809B /* QRCodeVC */,
 				4A60696F208C582D004282DF /* PDownList */,
 				4A4E5A772078921000E50947 /* PLSwitchVC */,
 			);
@@ -481,6 +528,7 @@
 		4AA23D622077AB3600023757 /* ThirdPartyLibs */ = {
 			isa = PBXGroup;
 			children = (
+				4A3E2F92209DF09700A01DD7 /* SUB */,
 				4AA23D682077ABA900023757 /* Controller */,
 				4AA23D692077ABA900023757 /* Model */,
 				4AA23D672077ABA900023757 /* View */,
@@ -627,6 +675,8 @@
 		4AAEF3B62077201600287CB5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4AB8076620D652B000C4809B /* YHScanCodeView */,
+				4A3E2F98209DF39300A01DD7 /* YHHUD */,
 				4A606968208C4DD5004282DF /* YHDropDownListView */,
 				4AA6FAAC207E6EAC00DE420A /* YHMutableWeakArray */,
 				4AA6FAA6207E686900DE420A /* YHSocketManager */,
@@ -720,6 +770,32 @@
 				4AAEF3D62077476A00287CB5 /* YHNavigationControllerConfigurationModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4AB8076620D652B000C4809B /* YHScanCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				4AB8076720D652BF00C4809B /* YHScanCodeView.h */,
+				4AB8076820D652BF00C4809B /* YHScanCodeView.m */,
+			);
+			path = YHScanCodeView;
+			sourceTree = "<group>";
+		};
+		4AB8076A20D6530900C4809B /* QRCodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				4AB8076B20D6530900C4809B /* Controller */,
+			);
+			path = QRCodeVC;
+			sourceTree = "<group>";
+		};
+		4AB8076B20D6530900C4809B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AB8076C20D6542E00C4809B /* QRCodeVC.h */,
+				4AB8076D20D6542E00C4809B /* QRCodeVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4AC24363207D0DF300AD0AE4 /* YHAFTool */ = {
@@ -908,6 +984,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3E2F9B209DF3C300A01DD7 /* YHHUD.m in Sources */,
 				4A4E5A6C20786A7B00E50947 /* LibAppCell.m in Sources */,
 				4A606973208C584C004282DF /* DropDownListVC.m in Sources */,
 				4A4E5A7520786A9A00E50947 /* LibAppModell.m in Sources */,
@@ -923,8 +1000,10 @@
 				4A6D36892073B80C00FC95D1 /* AppDelegate.m in Sources */,
 				4A4E5A652078647B00E50947 /* LibBaseTableViewVC.m in Sources */,
 				4AAEF3D72077476A00287CB5 /* YHNavigationControllerConfigurationModel.m in Sources */,
+				4AB8076E20D6542E00C4809B /* QRCodeVC.m in Sources */,
 				4A60696E208C4EA5004282DF /* YHDropDownListModel.m in Sources */,
 				4AA23D722077AFCB00023757 /* PLMyPackagingVC.m in Sources */,
+				4AB8076920D652BF00C4809B /* YHScanCodeView.m in Sources */,
 				4AA23D752077AFE800023757 /* PLSDKIntergrationVC.m in Sources */,
 				4AAEF3C92077201600287CB5 /* YHTabBarButton.m in Sources */,
 				4A4E5A7220786A9100E50947 /* LibAppHeadView.m in Sources */,
@@ -938,6 +1017,7 @@
 				4A6D36A72073D11C00FC95D1 /* PLHomeVC.m in Sources */,
 				4A4E5A852078996500E50947 /* YHSwitchControllerHeaderBar.m in Sources */,
 				4AAEF3CF20772D6100287CB5 /* YHNavigationController.m in Sources */,
+				4A3E2F97209DF0F600A01DD7 /* PLHUDVC.m in Sources */,
 				4A4E5A8E2078A99300E50947 /* YHSwitchControllerHeaderButton.m in Sources */,
 				4A6D36872073B80C00FC95D1 /* ViewController.m in Sources */,
 				4A4E5A882078999000E50947 /* YHSwitchControllerChangeVCView.m in Sources */,

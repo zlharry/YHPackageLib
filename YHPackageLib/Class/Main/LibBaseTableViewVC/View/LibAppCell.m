@@ -22,7 +22,7 @@
     LibAppCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
         cell = [[LibAppCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
-        cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;
+        
     }
     
     return cell;
@@ -35,6 +35,11 @@
     // 显示数据
     self.textLabel.text = model.title;
     self.detailTextLabel.text = model.subTitle;
+    if (model.tarClass) {
+        self.accessoryType =UITableViewCellAccessoryDisclosureIndicator;
+    } else {
+        self.accessoryType =UITableViewCellAccessoryNone;
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

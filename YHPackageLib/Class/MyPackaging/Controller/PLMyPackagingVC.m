@@ -11,6 +11,7 @@
 
 #import "PLSwitchVC.h"
 #import "DropDownListVC.h"
+#import "QRCodeVC.h"
 
 
 @interface PLMyPackagingVC ()
@@ -41,6 +42,9 @@
     [group0 addModel:[LibAppModel modelWithTitle:@"DropDownListVC"
                                         subTitle:@"一个下拉列表的封装"
                                         tarClass:[DropDownListVC class]]];
+    [group0 addModel:[LibAppModel modelWithTitle:@"QRCodeVC"
+                                        subTitle:@"对二维码或条形码扫描"
+                                        tarClass:[QRCodeVC class]]];
    
     
 //    // 第二组

@@ -8,17 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+/**  点击后执行的代码 */
+typedef void (^LibAppModelBlock)(void);
+
 @interface LibAppModel : NSObject
 
 /** <#text#> */
 @property (nonatomic, copy) NSString *title;
 /** <#text#> */
 @property (nonatomic, copy) NSString *subTitle;
-
 /** <#text#> */
 @property (nonatomic, assign) Class tarClass;
+@property (nonatomic, copy) LibAppModelBlock block;
 
 
 + (instancetype)modelWithTitle:(NSString *)title subTitle:(NSString *)subTitle tarClass:(Class)tarClass;
++ (instancetype)modelWithTitle:(NSString *)title subTitle:(NSString *)subTitle block:(LibAppModelBlock)block;
 
 @end
