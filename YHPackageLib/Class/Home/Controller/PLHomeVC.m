@@ -9,7 +9,7 @@
 #import "PLHomeVC.h"
 
 #import "YHAFTool.h"
-
+#import "NSData+YH.h"
 @interface PLHomeVC ()
 
 @end
@@ -32,8 +32,14 @@
     
     self.title = @"首页";
     
+    NSData *ipaData = [NSData dataWithContentsOfFile:@"/Users/sunshine/Desktop/SmartClient.ipa"];
+    NSLog(@"发布：%@", [ipaData md5String]);
+    NSData *testIpaData = [NSData dataWithContentsOfFile:@"/Users/sunshine/Developer/Publish/SmartClientPublish/SmartClientV5.2.5 正式发布/测试版本/SmartClient 2018-05-24 16-35-52/SmartClient.ipa"];
+    NSLog(@"测试：%@", [testIpaData md5String]);
+    
+    
+    
     // 发送测试请求
-
     [YHAFTool GETData:@"http://cdn.cocimg.com/bbs/attachment/upload/03/1643031429686718.jpg"
        parameters:nil
           success:^(NSData *responseObject) {
