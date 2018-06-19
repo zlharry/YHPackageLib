@@ -8,6 +8,8 @@
 
 #import "PLThirdPartyLibsVC.h"
 
+#import "PLHUDVC.h"
+
 @interface PLThirdPartyLibsVC ()
 
 @end
@@ -27,19 +29,28 @@
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/** 初始化模型数据 */
+- (void)setupGroups
+{
+    // 第一组
+    LibAppGroupModel *group0 = [[LibAppGroupModel alloc] init];
+    [self.groups addObject:group0];
+    group0.title = @"UI控件";
+    [group0 addModel:[LibAppModel modelWithTitle:@"MBProgressHUD"
+                                        subTitle:@"一个用户提示的第三方库"
+                                        tarClass:[PLHUDVC class]]];
+    
+    
+    //    // 第二组
+    //    LibAppGroupModel *group1 = [[LibAppGroupModel alloc] init];
+    //    [self.groups addObject:group1];
+    //    group1.title = @"地图、定位";
+    //    [group1 addModel:[LibAppModel modelWithTitle:@"定位"
+    //                                        subTitle:@"定位开发练习"
+    //                                        tarClass:[UIViewController class]]];
+    //
+    
 }
-*/
 
 @end

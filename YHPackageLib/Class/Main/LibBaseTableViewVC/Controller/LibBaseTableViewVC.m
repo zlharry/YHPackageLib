@@ -118,8 +118,12 @@
     
     
     if (model.tarClass) {
-        [self.navigationController pushViewController:[[model.tarClass alloc] init] animated:YES];
+        UIViewController *vc = [[model.tarClass alloc] init];
+        vc.title = model.title;
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    if (model.block) model.block();
 }
 
 @end

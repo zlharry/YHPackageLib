@@ -47,7 +47,7 @@
                           listSize:CGSizeMake(btn.frame.size.width, 200)
                             models:models
                 didClickedRowBlock:^(NSInteger row, YHDropDownListModel *model) {
-                    NSLog(@"%ld -- %@", row, model.title);
+                    NSLog(@"%ld --- %@", row, model.title);
                 }];
 }
 
