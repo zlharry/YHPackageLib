@@ -36,17 +36,17 @@
         /** 工具条按钮宽度 */
         self.headBarButtonWidth = 100;
         /** 工具条背景颜色 */
-        self.headBarBackgroundColor = [UIColor grayColor];
+        self.headBarBackgroundColor = [UIColor whiteColor];
         /** 工具条标记颜色 */
-        self.headBarTagViewBackgroundColor = [UIColor orangeColor];
+        self.headBarTagViewBackgroundColor = [UIColor greenColor];
         /** 工具条按钮字体 */
         self.headBarFont = [UIFont systemFontOfSize:11];
         /** 工具条按钮正常文字颜色 */
-        self.headBarButtonNormalTitleColor = [UIColor whiteColor];
+        self.headBarButtonNormalTitleColor = [UIColor grayColor];
         /** 工具条按钮选中文字颜色 */
-        self.headBarButtonSelectedTitleColor = [UIColor orangeColor];
+        self.headBarButtonSelectedTitleColor = [UIColor greenColor];
         /** 工具条按钮选中背景颜色 */
-        self.headBarButtonSelectedBackgroundColor = [UIColor blueColor];
+        self.headBarButtonSelectedBackgroundColor = [UIColor clearColor];
     }
     
     return self;
