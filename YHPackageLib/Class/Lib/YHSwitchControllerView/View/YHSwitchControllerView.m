@@ -105,6 +105,16 @@
     self.headerBar.headBarButtonSelectedBackgroundColor = headBarButtonSelectedBackgroundColor;
 }
 
+- (void)setSelectedIndex:(NSInteger)selectedIndex
+{
+    _selectedIndex = selectedIndex;
+    
+    // 切换界面到对应的位置
+    self.changeVCView.selectedIndex = selectedIndex;
+    
+    self.headerBar.selectedIndex = selectedIndex;
+}
+
 
 - (NSMutableArray<UIViewController *> *)childViewControllers
 {
@@ -117,14 +127,21 @@
 
 - (void)setChildVCs:(NSArray<UIViewController *> *)childVCs
 {
+    // 1.移除原来的所有控制器
+    [self removeAllControllers];
+    
+    // 2.添加新的控制器
     for (UIViewController *vc in childVCs) {
         [self addChildViewController:vc];
     }
+    
+    // 3.默认选中第一个
+    self.selectedIndex = 0;
 }
 
 - (NSArray<UIViewController *> *)childVCs
 {
-    return self.childViewControllers;
+    return _childViewControllers;
 }
 
 - (void)addChildViewController:(UIViewController *)childController
@@ -218,6 +235,17 @@
     [self removeChildViewControllerAtIndexe:index];
 }
 
+/** 移除所有控制器 */
+- (void)removeAllControllers
+{
+    // 1.移除所有按钮
+    [self.headerBar removeAllButtons];
+    // 2.移除所有控制器View
+    [self.changeVCView removeAllChildViewController];
+    // 3.移除所有控制器
+    [self.childViewControllers removeAllObjects];
+}
+
 #pragma mark - YHSwitchControllerHeaderBarDelegate
 - (void)switchControllerHeaderBar:(YHSwitchControllerHeaderBar *)switchControllerHeaderBar didScrollAtScale:(CGFloat)scale
 {
@@ -230,9 +258,20 @@
     self.changeVCView.selectedIndex = to;
 }
 #pragma mark - YHSwitchControllerChangeVCViewDelegate
+/** 控制器View滑动到了某个比例位置 */
 - (void)switchControllerView:(YHSwitchControllerChangeVCView *)switchControllerView didScrollAtScale:(CGFloat)scale
 {
     self.headerBar.tagViewXScale = scale;
+}
+/** 滑动到了某个位置 */
+- (void)switchControllerView:(YHSwitchControllerChangeVCView *)switchControllerView didScrollToIndex:(NSInteger)index
+{
+    if ([self.delegate respondsToSelector:@selector(switchControllerView:didChangeFrom:to:)]) {
+        if (self.selectedIndex != index) {
+            [self.delegate switchControllerView:self didChangeFrom:self.selectedIndex to:index];
+        }
+    }
+    self.selectedIndex = index; // 更新选择的控制器位置
 }
 
 

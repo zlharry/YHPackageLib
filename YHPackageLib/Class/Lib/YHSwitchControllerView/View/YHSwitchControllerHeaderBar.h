@@ -40,6 +40,8 @@
 
 /** 标记View的X所在的比例 */
 @property (nonatomic, assign) CGFloat tagViewXScale;
+/** 切换到特定的控制器 */
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 
 
@@ -48,5 +50,7 @@
 
 /** 移除了某一个控制器 */
 - (void)removeChildViewControllerAtIndexe:(NSInteger)indexe;
+/**  移除所有控制器导航按钮 */
+- (void)removeAllButtons;
 
 @end

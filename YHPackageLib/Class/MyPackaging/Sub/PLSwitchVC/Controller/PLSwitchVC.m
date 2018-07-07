@@ -10,7 +10,7 @@
 
 #import "YHSwitchControllerView.h"
 
-@interface PLSwitchVC ()
+@interface PLSwitchVC () <YHSwitchControllerViewDelegate>
 
 /** <#text#> */
 @property (nonatomic, weak) YHSwitchControllerView *switchVCView;
@@ -29,7 +29,7 @@
     CGFloat svcW = self.view.frame.size.width;
     CGFloat svcH = self.view.frame.size.height - svcY;
     self.switchVCView.frame = CGRectMake(svcX, svcY, svcW, svcH);
-    self.switchVCView.headBarButtonWidth = 50;
+    self.switchVCView.headBarButtonWidth = 100;
 //    self.switchVCView.headBarButtonSelectedBackgroundColor = [UIColor redColor];
     
     // 测试添加控制器
@@ -63,15 +63,18 @@
     vc6.view.backgroundColor = [UIColor blueColor];
     //    [self.switchVCView addChildViewController:vc3];
     
-    self.switchVCView.childVCs = @[vc1, vc2, vc3, vc4, vc5, vc6];
+    self.switchVCView.childVCs = @[vc1, vc2, vc3, vc4, vc5];
     
-//    __weak typeof(self) weakSelf = self;
-//    dispatch_async(dispatch_queue_create("djhfka", DISPATCH_QUEUE_CONCURRENT), ^{
-//        sleep(5);
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [weakSelf.switchVCView removeChildViewControllerAtIndexe:1];
-//        });
-//    });
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_queue_create("djhfka", DISPATCH_QUEUE_CONCURRENT), ^{
+        sleep(5);
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            [weakSelf.switchVCView removeChildViewControllerAtIndexe:5];
+//            [weakSelf.switchVCView addChildViewController:vc6];
+            
+            self.switchVCView.childVCs = @[vc1, vc2];
+        });
+    });
 }
 
 - (YHSwitchControllerView *)switchVCView
@@ -80,8 +83,16 @@
         YHSwitchControllerView *switchVCView = [[YHSwitchControllerView alloc] init];
         [self.view addSubview:switchVCView];
         _switchVCView = switchVCView;
+        
+        switchVCView.delegate = self;
     }
     return _switchVCView;
+}
+
+#pragma mark - YHSwitchControllerViewDelegate
+- (void)switchControllerView:(YHSwitchControllerView *)switchControllerView didChangeFrom:(NSInteger)from to:(NSInteger)to
+{
+    NSLog(@"form : %ld -- to: %ld", from,  to);
 }
 
 @end

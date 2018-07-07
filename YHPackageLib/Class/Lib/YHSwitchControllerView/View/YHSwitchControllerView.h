@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class YHSwitchControllerView;
+
+@protocol YHSwitchControllerViewDelegate <NSObject>
+/** 用户从某个控制器切换到某个控制器 */
+- (void)switchControllerView:(YHSwitchControllerView *)switchControllerView didChangeFrom:(NSInteger)from to:(NSInteger)to;
+@end
+
 @interface YHSwitchControllerView : UIView
+
+/** 当前显示的是哪个控制器 默认是 0 */
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 
 /** 工具条高度 */
@@ -35,6 +45,9 @@
 /** 子控制器数组 */
 @property (nonatomic, strong) NSArray<UIViewController *> *childVCs;
 
+/** 代理对象 */
+@property (nonatomic, weak) id<YHSwitchControllerViewDelegate> delegate;
+
 /** 添加子控制器 */
 - (void)addChildViewController:(UIViewController *)childController;
 
@@ -43,5 +56,8 @@
 - (void)removeChildViewControllerAtIndexe:(NSInteger)index;
 /** 移除了某一个控制器 */
 - (void)removeChildViewController:(UIViewController *)viewController;
+
+/** 移除所有控制器 */
+- (void)removeAllControllers;
 
 @end
